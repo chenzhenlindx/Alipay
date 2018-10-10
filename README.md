@@ -4,14 +4,14 @@
 ```
 allprojects {
     repositories {
-        maven { url "http://172.29.1.21:8081/nexus/content/repositories/android-lib/"}
+        maven { url "https://jitpack.io" }       
         ...
     }
 }
 ```
 2. module下添加gradle依赖
 ```
-implementation 'com.hxct:alipay:1.0-SNAPSHOT'
+implementation 'com.github.chenzhenlindx:Alipay:1.0.0'
 //可选
 implementation 'io.reactivex.rxjava2:rxjava:2.1.6'
 //可选
