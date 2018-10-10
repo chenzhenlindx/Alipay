@@ -1,18 +1,4 @@
 apply plugin: 'com.android.library'
-apply plugin: 'maven'
-
-uploadArchives {
-    repositories.mavenDeployer {
-        //仓库地址
-        repository(url: NEXUS_REPOSITORY_URL) {
-            //私服账户信息
-            authentication(userName: NEXUS_USERNAME, password: NEXUS_PASSWORD)
-        }
-        pom.groupId = PROJ_GROUP
-        pom.artifactId = PROJ_ARTIFACTID
-        pom.version = PROJ_VERSION
-    }
-}
 android {
     compileSdkVersion build_versions.compile_sdk
 
